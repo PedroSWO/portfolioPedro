@@ -32,10 +32,18 @@
     background:red;
    }
 
+/* Portada */
+.main {
+    padding-top: 400px;
+    padding-left: 10px;
+    text-align: center;
+    
+}
+
 /* Bottom theme */
 .darktheme {
     display: inline;
-    padding-left: 1775px;
+    padding-left: 1525px;
 }
 .oscuro{ 
     background-color: black; 
