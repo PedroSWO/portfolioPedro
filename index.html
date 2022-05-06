@@ -12,30 +12,25 @@
 </head>
 <body>
     <!--Navbar section-->
-    <header>
-        <img src="resources/images/logo.png" alt="Personal Logo">
-        <nav class="navbar">
+    <navbar class="menu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-                <div class="dropdown">
-                    <a class="dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <li><a class="dropdown-item" href="index-java.html">Java</a></li>
-                      <li><a class="dropdown-item" href="index-html.html">HTML</a></li>
-                      <li><a class="dropdown-item" href="index-csharp.html">C Sharp</a></li>
-                    </ul>
-                  </div>
-            </li>
-            <li><a href="index-about.html">About me</a></li>
-            <li><a href="index-contact.html">Contact</a></li>
-            <li>
-                <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
-            </li>
+            <div class="darktheme">
+                <button type="button" class="btn btn-dark" onclick="changeImage(),cambiarModo()">Dark / Light</button>
+            </div>
+         <a href="index.html">Home</a>
+         <div class="dropdown">
+            <a class="dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="index-java.html">Java</a>
+              <a class="dropdown-item" href="index-html.html">HTML</a>
+              <a class="dropdown-item" href="index-csharp.html">C Sharp</a>
+            </ul>
+          </div>
+         <a href="index-about.html">About Me</a>
+         <a href="index-contact.html">Contact</a>
         </ul>
-        </nav>
-    </header>
-
+    </navbar>
+    
     <!-- Banner section-->
  
 

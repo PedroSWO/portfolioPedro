@@ -13,35 +13,31 @@
 <body>
     
      <!--Navbar section-->
-     <header>
-        <img src="resources/images/logo.png" alt="Personal Logo">
-        <nav class="navbar">
+     <navbar class="menu">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>
-                <div class="dropdown">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <li><a class="dropdown-item" href="index-java.html">Java</a></li>
-                        <li><a class="dropdown-item" href="index-html.html">HTML</a></li>
-                        <li><a class="dropdown-item" href="index-csharp.html">C Sharp</a></li>
-                    </ul>
-                </div>
-            </li>
-            <li><a href="index-about.html">About me</a></li>
-            <li><a href="index-contact.html">Contact</a></li>
-            <li>
-                <button type="button" class="btn btn-dark"  onclick="changeImage(),cambiarModo()">Oscuro / Claro</button>
-            </li>
+            <div class="darktheme">
+                <button type="button" class="btn btn-dark" onclick="changeImage(),cambiarModo()">Dark / Light</button>
+            </div>
+         <a href="index.html">Home</a>
+         <div class="dropdown">
+            <a class="dropdown-toggle" href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="index-java.html">Java</a>
+              <a class="dropdown-item" href="index-html.html">HTML</a>
+              <a class="dropdown-item" href="index-csharp.html">C Sharp</a>
+            </ul>
+          </div>
+         <a href="index-about.html">About Me</a>
+         <a href="index-contact.html">Contact</a>
         </ul>
-        </nav>
-    </header>
+    </navbar>
+    
 
     <div>
         <div class="about">
                   <div class="elemento">
-                    <p>Pedro Comesaña es un desarrollador de aplicaciones Web nacido en la ciudad de Vigo, Galicia.</p>
-                    <p>Actualmente se encuentra realizando los estudios de grado superior dual de desarrollador de aplicaciones web en Santiago de Compostela en el instituto IES San Clemente y en la empresa de Software One como miembro de su academia.</p>
+                    <p id="p-about">Pedro Comesaña es un desarrollador de aplicaciones Web nacido en la ciudad de Vigo, Galicia.</p>
+                    <p id="p-about">Actualmente se encuentra realizando los estudios de grado superior dual de desarrollador de aplicaciones web en Santiago de Compostela en el instituto IES San Clemente y en la empresa de Software One como miembro de su academia.</p>
                     </div>
                   <div class="elemento" id="image">
                       <img id="about-image" src="./resources/images/about_me.png" alt="">
@@ -58,7 +54,7 @@
         <li><a href="https://es.linkedin.com/"><img src="./resources/images/icons8-linkedin-rodeado-de-círculo-30.png" alt=""></a></li>
      </footer>
     </div> 
-<script src="resources/images/dark.js"></script>
+<script src="resources/scripts/dark.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
 </body>
 </html>
